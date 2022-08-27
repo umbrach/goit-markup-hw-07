@@ -543,6 +543,17 @@ p {
   justify-content: center;
 }
 
+.page-footer__network__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  fill: currentColor;
+}
+
 .page-footer__network-list li + li {
   margin-left: 10px;
 }
