@@ -42,3 +42,48 @@
 
   fill: currentColor;
 }
+
+// footer network--dark
+
+.network-list.network--dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network__icon.network--dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+  margin-bottom: auto;
+
+  fill: var(--primary-white-color);
+}
+
+.network-list.network--dark li + li {
+  margin-left: 10px;
+}
+
+.network__button.network--dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+
+  transition: background-color 250ms var(--cubic-bezier);
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+
+  .network__link.network--dark:focus & {
+    background-color: var(--accent-color);
+  }
+}
