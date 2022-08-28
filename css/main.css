@@ -1,10 +1,3 @@
-body {
-  background-color: #ffffff;
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -56,6 +49,13 @@ p {
   --bg-color: #2f303a;
   --modal-icon-color: #212121;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .backdrop {
@@ -145,18 +145,7 @@ p {
   color: #000000;
   transition: color 250ms var(--cubic-bezier);
 }
-
-.logo-blue {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
-.logo:focus,
-.logo:hover {
+.logo:focus, .logo:hover {
   color: var(--accent-color);
 }
 
@@ -171,6 +160,9 @@ p {
   color: var(--primary-white-color);
   transition: color 250ms var(--cubic-bezier);
 }
+.logo-secondary:hover, .logo-secondary:focus {
+  color: var(--accent-color);
+}
 
 .logo-accent {
   font-family: Raleway, sans-serif;
@@ -181,10 +173,16 @@ p {
   color: var(--accent-color);
   transition: color 250ms var(--cubic-bezier);
 }
-
-.logo-secondary:hover,
-.logo-secondary:focus,
 .logo-accent:focus {
+  color: var(--accent-color);
+}
+
+.logo-blue {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
   color: var(--accent-color);
 }
 
@@ -232,7 +230,7 @@ p {
 }
 
 .modal__title {
-  font-family: "Roboto", sans-serif;
+  font-family: "" Roboto "", sans-serif;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -276,7 +274,7 @@ label {
   border-radius: 4px;
   outline-color: rgba(33, 33, 33, 0.2);
   transition: border 250ms var(--cubic-bezier);
-  font-family: "Roboto";
+  font-family: "" Roboto "";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -284,17 +282,13 @@ label {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__field-input:focus {
   outline-color: var(--accent-color);
 }
-
 .modal__field-input:hover {
   border-color: var(--accent-color);
 }
-
-.modal__field-input:focus + .modal__icon,
-.modal__field-input:hover + .modal__icon {
+.modal__field-input:focus + .modal__icon, .modal__field-input:hover + .modal__icon {
   fill: var(--accent-color);
 }
 
@@ -307,7 +301,7 @@ label {
   font-size: 14px;
   color: var(--primary-text-color);
   resize: none;
-  font-family: "Roboto";
+  font-family: "" Roboto "";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -317,7 +311,7 @@ label {
 }
 
 .modal__field-input.comment::placeholder {
-  font-family: "Roboto";
+  font-family: "" Roboto "";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -337,7 +331,7 @@ label {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "" Roboto "", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -401,10 +395,6 @@ label {
   justify-content: center;
 }
 
-.network li + li {
-  margin-left: 10px;
-}
-
 .network__button {
   display: flex;
   align-items: center;
@@ -417,10 +407,13 @@ label {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
-
 .network__button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.network li + li {
+  margin-left: 10px;
 }
 
 .network__link:focus .network__button {
@@ -469,15 +462,17 @@ label {
   color: var(--primary-text-color);
   transition: color 250ms var(--cubic-bezier);
 }
+.site-nav .link:hover, .site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 
 .site-nav__item .link.current {
   position: relative;
   padding-bottom: 32px;
   padding-top: 32px;
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
 }
 
 .link.current::after {
@@ -490,11 +485,6 @@ label {
   border-radius: 2px;
   background-color: var(--accent-color);
   transform: translateY(1px);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
 }
 
 .auth-nav {
@@ -516,9 +506,7 @@ label {
 .auth-nav__item .link {
   transition: color 250ms var(--cubic-bezier);
 }
-
-.auth-nav__item .link:hover,
-.auth-nav__item .link:focus {
+.auth-nav__item .link:hover, .auth-nav__item .link:focus {
   color: var(--accent-color);
 }
 
@@ -616,7 +604,7 @@ label {
   bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  font-family: "Roboto", sans-serif;
+  font-family: "" Roboto "", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -693,9 +681,7 @@ label {
   color: var(--icons-color);
   transition: color 250ms var(--cubic-bezier);
 }
-
-.clients-list__button:hover,
-.clients-list__button:focus {
+.clients-list__button:hover, .clients-list__button:focus {
   color: var(--accent-color);
   outline-color: var(--accent-color);
 }
@@ -722,9 +708,7 @@ label {
   color: var(--primary-white-color);
   transition: color 250ms var(--cubic-bezier);
 }
-
-.page-footer__address:hover,
-.page-footer__address:focus {
+.page-footer__address:hover, .page-footer__address:focus {
   color: var(--accent-color);
 }
 
@@ -737,9 +721,7 @@ label {
   font-style: normal;
   transition: color 250ms var(--cubic-bezier);
 }
-
-.page-footer__link .link:hover,
-.page-footer__link .link:focus {
+.page-footer__link .link:hover, .page-footer__link .link:focus {
   color: var(--accent-color);
 }
 
@@ -749,7 +731,7 @@ label {
 
 .page-footer__title {
   margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "" Roboto "", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -787,11 +769,9 @@ label {
   color: var(--primary-white-color);
   transition: background-color 250ms var(--cubic-bezier);
 }
-
 .page-footer__network-button:hover {
   background-color: var(--accent-color);
 }
-
 .network__link:focus .page-footer__network-button {
   background-color: var(--accent-color);
 }
@@ -813,7 +793,7 @@ label {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  font-family: "Roboto";
+  font-family: "" Roboto "";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -832,7 +812,7 @@ label {
   border: 0px;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: "" Roboto "";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -866,6 +846,12 @@ label {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.work-examples__card:nth-child(3n) {
+  margin-right: 0px;
+}
+.work-examples__card:hover, .work-examples__card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .work-examples__card-image {
   position: relative;
@@ -887,22 +873,11 @@ label {
   transform: translateY(100%);
   transition: transform 250ms var(--cubic-bezier);
 }
-
 .work-examples__card:hover .work-examples__text-overlay {
   transform: translateY(0);
 }
-
 .work-examples__card .link:focus .work-examples__text-overlay {
   transform: translateY(0);
-}
-
-.work-examples__card:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.work-examples__card:hover,
-.work-examples__card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-examples__text {

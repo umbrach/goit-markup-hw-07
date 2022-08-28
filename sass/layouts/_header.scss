@@ -31,16 +31,21 @@
   color: var(--primary-text-color);
 
   transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &.current {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__item .link.current {
   position: relative;
   padding-bottom: 32px;
   padding-top: 32px;
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
 }
 
 .link.current::after {
@@ -55,11 +60,6 @@
   background-color: var(--accent-color);
 
   transform: translateY(1px);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
 }
 
 .auth-nav {
@@ -81,11 +81,11 @@
 
 .auth-nav__item .link {
   transition: color 250ms var(--cubic-bezier);
-}
 
-.auth-nav__item .link:hover,
-.auth-nav__item .link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .auth-nav__item:not(:last-child) {

@@ -8,21 +8,11 @@
   color: #000000;
 
   transition: color 250ms var(--cubic-bezier);
-}
 
-.logo-blue {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-
-  color: var(--accent-color);
-}
-
-.logo:focus,
-.logo:hover {
-  color: var(--accent-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .logo-secondary {
@@ -38,6 +28,11 @@
   color: var(--primary-white-color);
 
   transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .logo-accent {
@@ -50,10 +45,18 @@
   color: var(--accent-color);
 
   transition: color 250ms var(--cubic-bezier);
+
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.logo-secondary:hover,
-.logo-secondary:focus,
-.logo-accent:focus {
+.logo-blue {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
   color: var(--accent-color);
 }

@@ -8,3 +8,10 @@
   --modal-icon-color: #212121;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}

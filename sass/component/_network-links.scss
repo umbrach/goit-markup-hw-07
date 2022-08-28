@@ -3,10 +3,6 @@
   justify-content: center;
 }
 
-.network li + li {
-  margin-left: 10px;
-}
-
 .network__button {
   display: flex;
   align-items: center;
@@ -20,11 +16,15 @@
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
+
+  &:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
-.network__button:hover {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+.network li + li {
+  margin-left: 10px;
 }
 
 .network__link:focus .network__button {

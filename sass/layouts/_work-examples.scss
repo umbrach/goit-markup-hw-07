@@ -11,6 +11,16 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .work-examples__card-image {
@@ -35,24 +45,14 @@
 
   transform: translateY(100%);
   transition: transform 250ms var(--cubic-bezier);
-}
 
-.work-examples__card:hover .work-examples__text-overlay {
-  transform: translateY(0);
-}
+  .work-examples__card:hover & {
+    transform: translateY(0);
+  }
 
-.work-examples__card .link:focus .work-examples__text-overlay {
-  transform: translateY(0);
-}
-
-.work-examples__card:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.work-examples__card:hover,
-.work-examples__card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  .work-examples__card .link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .work-examples__text {

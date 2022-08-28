@@ -18,12 +18,12 @@
   color: var(--icons-color);
 
   transition: color 250ms var(--cubic-bezier);
-}
 
-.clients-list__button:hover,
-.clients-list__button:focus {
+  &:hover,
+  &:focus {
   color: var(--accent-color);
   outline-color: var(--accent-color);
+  }
 }
 
 .clients-list__image-svg {

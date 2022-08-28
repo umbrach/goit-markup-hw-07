@@ -45,7 +45,7 @@
 }
 
 .modal__title {
-  font-family: 'Roboto', sans-serif;
+  font-family: '' Roboto '', sans-serif;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -94,7 +94,7 @@ label {
 
   transition: border 250ms var(--cubic-bezier);
 
-  font-family: 'Roboto';
+  font-family: '' Roboto '';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -102,19 +102,19 @@ label {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-}
 
-.modal__field-input:focus {
-  outline-color: var(--accent-color);
-}
+  &:focus {
+    outline-color: var(--accent-color);
+  }
 
-.modal__field-input:hover {
-  border-color: var(--accent-color);
-}
+  &:hover {
+    border-color: var(--accent-color);
+  }
 
-.modal__field-input:focus + .modal__icon,
-.modal__field-input:hover + .modal__icon {
-  fill: var(--accent-color);
+  &:focus + .modal__icon,
+  &:hover + .modal__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__field-input.comment {
@@ -127,7 +127,7 @@ label {
   color: var(--primary-text-color);
   resize: none;
 
-  font-family: 'Roboto';
+  font-family: '' Roboto '';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -138,7 +138,7 @@ label {
 }
 
 .modal__field-input.comment::placeholder {
-  font-family: 'Roboto';
+  font-family: '' Roboto '';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -160,7 +160,7 @@ label {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: '' Roboto '', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
